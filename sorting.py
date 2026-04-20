@@ -20,15 +20,12 @@ def bubble_sort(seznam):
             barvy = ["steelblue"] * len(hodnoty)
             barvy[j] = "tomato"
             barvy[j + 1] = "tomato"
-
             plt.clf()
             plt.bar(range(len(hodnoty)), hodnoty, color=barvy)
             plt.title("Bubble Sort")
             plt.pause(0.1)
-
     plt.ioff()
     plt.show()
-
     return hodnoty
 
 def main():
